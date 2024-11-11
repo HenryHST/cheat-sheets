@@ -102,26 +102,14 @@ Minikube supports the following drivers:
 
 docker, virtualbox, podman, vmwarefusion, kvm2, hyperkit, hyperv, vmware, parallels, none
 
-Get the status
-minikube status
-
-Visit the dashboard
-minikube dashboard
-
-Stop a cluster
-minikube stop
-
-Delete a cluster
-minikube delete
-
-List available addons
-minikube addons list
-
-Enable an addon
-minikube addons enable metrics-server
-
-Disable an addon
-minikube addons disable metrics-server
-
-Proxy to a cluster service
-minikube service <service_name>
+| Command | Description |
+| ------- | ----------- |
+| `minikube start` | Starts (and installs if not exists yet) the minikube node on the VM. |
+| `minikube stop` | Stops the minikube node on the VM. |
+| `minikube status` | Get the status |
+| `minikube delete` | Deletes the minikube node from the VM. |
+| `minikube dashboard` | Opens the minikube Kubernetes dashboard in the browser. |
+| `minikube addons list` | List available addons |
+| `minikube addons enable metrics-server` | Enable an addon |
+| `minikube addons disable metrics-server` | Disable an addon |
+| `minikube service <service_name>` | Proxy to a cluster service |
