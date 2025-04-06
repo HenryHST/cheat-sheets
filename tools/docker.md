@@ -15,6 +15,9 @@
 | `docker pause <container>` | Suspend a container |
 | `docker unpause <container>` | Resume a container |
 | `docker rm <container>` | Destroy a container |
+| `docker build -t NAME/IMAGE:latest .` | Build a container |
+| `docker buildx build --platform linux/amd64 -t <user>/<repository>:latest .` | Build-x86 |
+| `docker buildx build --platform linux/arm64 -t <user>/<repository>:latest .` | Build-arm |
 
 ## Container Bulk Management
 
