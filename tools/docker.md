@@ -94,3 +94,10 @@
 | `docker volume prune` | Delete all volumes (not referenced by any container) |
 | `docker run --rm --volumes-from <container> -v $(pwd):/backup busybox tar cvfz /backup/backup.tar.gz <container-path>` | Backup a container |
 | `docker run --rm --volumes-from <container> -v $(pwd):/backup busybox sh -c "cd <container-path> && tar xvfz /backup/backup.tar.gz --strip 1"` | Restore a container from backup |
+
+## Misc
+
+| COMMAND | DESCRIPTION |
+| --- | --- |
+| `docker inspect --format='{{.LogPath}}' containername` | /var/lib/docker/containers/f844a7....4-json.log |
+| `tail -f `docker inspect --format='{{.LogPath}}' containername`` | To see live logs you can run below command |
