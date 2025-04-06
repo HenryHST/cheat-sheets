@@ -100,4 +100,4 @@
 | COMMAND | DESCRIPTION |
 | --- | --- |
 | `docker inspect --format='{{.LogPath}}' containername` | /var/lib/docker/containers/f844a7....4-json.log |
-| `tail -f `docker inspect --format='{{.LogPath}}' containername`` | To see live logs you can run below command |
+| `tail -f `docker inspect --format='{{.LogPath}}' containername` | To see live logs you can run below command |
