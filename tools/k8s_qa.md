@@ -58,5 +58,32 @@
  - Container Runtime: Runs containers (Docker, containerd).
 
 ## 15. What is etcd?
- - 
+ - A distributed key-value store.
+ - Stores Kubernetes cluster state and configuration.
+
+## 16. What is the Kubernetes Control Plane?
+ includea:
+ - kube-apiserver
+ - etcd
+ - kube-scheduler
+ - kube-controller-manager
+ - cloud-controller-manager
+
+## 17. How does Kubernetes handle rolling updates?
+ - Gradually replaces old pods with new ones using Deployment strategy.
+ - Supports zero-downtime updates.
+
+## 18. How do you do a rollback in Kubernetes?
+ - kubectl rollout undo deployment myapp
+
+## 19. What happens when a pod crashes?
+ - ReplicaSet or Deployment controller automatically recreates it.
+
+## 20. How do you troubleshoot a failing pod?
+ - kubectl get pods
+ - kubectl describe pod <name>
+ - kubectl logs <name>
+ - kubectl exec -it <name> -- bash
+
+
 
