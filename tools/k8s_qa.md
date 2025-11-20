@@ -26,3 +26,37 @@
  - LoadBalancer: exposes app using external cloud load balancer.
  - ExternalName: maps to external DNS name.
 
+## 7. What is a Namespace?
+ - Logical cluster division to isolate resources (like environments: dev, test, prod).
+
+## 8. What is a ConfigMap and a Secret?
+ - ConfigMap: stores non-sensitive config like app settings.
+ - Secret: stores sensitive data like passwords, tokens, and certs.
+
+## 9. What is a DaemonSet?
+ - Ensures a pod runs on every node in the cluster (e.g., log collectors or monitoring agents).
+
+## 10. What is a StatefulSet?
+ - Used for stateful applications (like databases).
+ - Maintains sticky identity: each pod has a stable name and storage.
+
+## 11. What is HPA (Horizontal Pod Autoscaler)?
+ - Automatically scales pods based on CPU/memory usage or custom metrics.
+ - Uses metrics server.
+
+## 12. What is a Job and CronJob in Kubernetes?
+ - Job: Runs a task to completion.
+ - CronJob: Schedules a Job at specific intervals like a cron task.
+
+## 13. What is a Node?
+ - A worker machine in Kubernetes (virtual or physical).
+ - Pods are scheduled to nodes by the scheduler.
+
+## 14. What is Kubelet, Kube-Proxy, and Container Runtime?
+ - Kubelet: Agent that runs on each node, communicates with the API server.
+ - Kube-proxy: Maintains network rules and handles service routing.
+ - Container Runtime: Runs containers (Docker, containerd).
+
+## 15. What is etcd?
+ - 
+
